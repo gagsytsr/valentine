@@ -14,12 +14,12 @@
         <div class="Mainprompt">
             <img class="image" src="images/cute.gif"></img>
             <div class="text">
-              <h1 class="hh" id="name">Привіт, красуне!</h1>
-              <p class="pp" id="question">Ти будеш моєю Валентинкою? </p>
+              <h1 class="hh" id="name">Привет,рыжулька!</h1>
+              <p class="pp" id="question">Будешь моей принцеской? </p>
             </div>
             <div class="buttons">
-                <button class="button no" id="no-button" onclick="showMessage('No')">Ні</button>
-                <button class="button yes"  onclick="showMessage('Yes')" id="yesButton">Так</button>
+                <button class="button no" id="no-button" onclick="showMessage('No')">Нет</button>
+                <button class="button yes"  onclick="showMessage('Yes')" id="yesButton">Да</button>
             </div>
         </div>
     </div>
@@ -50,7 +50,7 @@
     noButton.style.top = randomY + "px";
 
     document.getElementById("question").textContent =
-      "Альо, ти що там задумала?";
+      "Так я не понял мне что обижаться?";
     document.getElementById("name").style.display = "none";
 
   }
@@ -60,7 +60,7 @@
     document.getElementById("no-button").remove();
 
     const yesMessage = document.getElementById("question");
-    yesMessage.textContent = "Ти моя бусінка 😘";
+    yesMessage.textContent = "Ты моя принцеска";
     yesMessage.style.display = "block";
     yesMessage.style.fontStyle = "normal";
     document.getElementsByClassName("image")[0].src = "images/kiss.gif";
